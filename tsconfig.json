@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 14",
+  "compilerOptions": {
+    "module": "es2020",
+    "target": "ES2017",
+    "rootDir": "src/server",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": ["ESNext"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/server/**/*.ts"],
+  "exclude": ["node_modules"]
+}

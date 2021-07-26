@@ -1,0 +1,49 @@
+{
+  "files": [
+    "dist"
+  ],
+  "name": "bell",
+  "version": "1.0.0",
+  "description": "Action at distance application",
+  "main": "dist/index",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node dist/index.js",
+    "build": "tsc -d",
+    "watch": "tsc-watch --onSuccess \"npm start\"",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "NodeJS",
+    "TypeScript",
+    "Koa",
+    "React"
+  ],
+  "author": "tzime vic garage71",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.2",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/node": "^16.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/koa2-cors": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "open": "^8.2.1"
+  }
+}
